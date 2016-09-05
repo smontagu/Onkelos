@@ -1,0 +1,194 @@
+@CHARSET "UTF-8";
+
+h1 {
+	text-align: center;
+}
+
+q {
+	quotes: "\201e" "\201c"
+}
+
+div.quote>p::before {
+	content: "\201e";
+}
+
+div.quote>p:last-child::after {
+	content: "\201c";
+}
+
+div.index {
+	font-size: larger;
+	font-weight: bolder;
+	margin: 2em 1em 0.5em 1em;
+}
+
+.commentary {
+	font-family: sans-serif;
+}
+
+strong {
+	letter-spacing: 0.05em;
+}
+
+cite {
+	font-weight: bolder;
+}
+
+.edition_2 {
+	font-style: oblique;
+}
+
+ol {
+	list-style-type: hebrew;
+}
+
+li > p { margin: 0;}
+
+blockquote {
+	width: 75%;
+	padding: 0 1em 0 1em;
+	font-size: x-large;
+	font-family: serif;
+	text-align: justify;
+}
+
+span.subhead {
+	font-weight: bolder;
+	font-size: xx-large;
+}
+
+.koteret {
+	font-family: serif;
+	font-size: x-large;
+	text-align: center;
+}
+
+a.footnote_ref {
+	vertical-align: super;
+	font-size: smaller;
+	line-height: normal;
+}
+
+.footnote,.footnotes {
+	font-size: smaller;
+}
+
+a.footnote_backref {
+	font-size: smaller;
+	margin-left: 1ch;
+}
+
+a.footnote_backref::after {
+	content: ")";
+}
+
+.my_note {
+    font-size: smaller;
+    font-style: italic;
+    color: purple;
+}
+
+a.index {
+	display: inline-block;
+	padding: 0.2em;
+}
+
+.koteret>div {
+	margin: 1em;
+}
+
+.big_koteret {
+	font-size: xx-large;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+}
+
+.small_koteret {
+	font-size: smaller;
+}
+
+.spacy_koteret {
+	font-size: large;
+	letter-spacing: 0.2em;
+}
+
+.pasuk {
+	font-family: "SBL Hebrew";
+	font-size: 24pt;
+	text-align: center;
+	margin: 2em 1em 0.5em 1em;
+}
+
+.targum {
+	font-family: serif;
+	font-size: 22pt;
+	text-align: center;
+	margin: 0.5em 1em 2em 1em;
+}
+
+.page>.group_1 {
+	float: right;
+}
+
+.page>.group_2 {
+	float: left;
+}
+
+.perush {
+	font-family: serif;
+	margin-bottom: 1em;
+	font-size: 16pt;
+	text-align: justify;
+}
+
+.perush>.name {
+	display: block;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.perush>p>.headword_heb {
+	font-weight: bolder;
+	font-size: 20pt;
+	padding: 0.2em;
+}
+
+.perush>p>.headword_ara {
+	font-weight: bolder;
+	font-size: 18pt;
+	padding: 0.2em;
+}
+
+.yaer::before {
+	content: "יא״ר ";
+	font-weight: bolder;
+}
+
+.netina::before {
+	content: "נתינה לגר ";
+	font-weight: bolder;
+}
+
+.verse>.text_targum {
+	float: right;
+	padding-left: 1em;
+}
+
+.verse>.text_targum>.bible {
+	font-size: x-large;
+}
+
+.verse>.text_targum>.targum {
+	font-size: larger;
+}
+
+.verse>.perushim>.perush {
+	text-align: justify;
+}
+
+@media print {
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
