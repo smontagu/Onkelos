@@ -186,9 +186,17 @@ a.index {
 	text-align: justify;
 }
 
+span.navigation_link {
+    font-size: smaller;
+}
+
 @media print {
 	a {
 		color: inherit;
 		text-decoration: none;
+	}
+
+	div.index, .navigation_link {
+	    display: none;
 	}
 }
