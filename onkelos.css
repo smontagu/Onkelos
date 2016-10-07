@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-h1 {
+h1, h2 {
 	text-align: center;
 }
 
@@ -54,7 +54,6 @@ ol {
 li > p { margin: 0;}
 
 .content_frame {
-	width: 75%;
 	padding: 0 1em 0 1em;
 	font-size: x-large;
 	font-family: serif;
@@ -63,7 +62,7 @@ li > p { margin: 0;}
 
 span.subhead {
 	font-weight: bolder;
-	font-size: xx-large;
+	font-size: larger;
 }
 
 .koteret {
@@ -107,7 +106,7 @@ a.index {
 }
 
 .big_koteret {
-	font-size: xx-large;
+	font-size: larger;
 	font-weight: bolder;
 	letter-spacing: 0.1em;
 }
@@ -199,7 +198,18 @@ span.navigation_link {
     font-size: smaller;
 }
 
+@media screen {
+    .content_frame, .koteret {
+	width: 75%;
+	font-size: x-large;
+    }
+}
+
 @media print {
+    .content_frame, .koteret {
+	font-size: 12pt;
+    }
+    
 	a {
 		color: inherit;
 		text-decoration: none;
